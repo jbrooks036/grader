@@ -16,11 +16,11 @@ module.exports = function(app, express){
   app.get('/about', home.about);
   app.get('/faq', home.faq);
 
-  app.get('/items/new', items.init);
-  app.post('/items', items.create);
-  app.get('/items', items.index);
-  app.get('/items/:id', items.show);
-  app.post('/items/:id/delete', items.destroy);
+  app.get('/students/new', students.newStudent);
+  app.post('/students', students.create);
+  app.get('/students', students.index);
+  app.get('/students/:id', students.studentInfo);
+  app.post('/students/:id/delete', students.destroy);
 
   console.log('Pipeline Configured');
 };

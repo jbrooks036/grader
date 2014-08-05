@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "description": "grader ======",
   "main": "app/index.js",
-  "bin": {"coveralls" : "./node_modules/coveralls/bin/coveralls.js"},
+//  "bin": {"coveralls" : "./node_modules/coveralls/bin/coveralls.js"},
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test --recursive -R spec",
-   "coveralls" : "./node_modules/mocha/bin/mocha test --recursive - r blanket -R mocha-lcov-report | coveralls"
+    "test": "mocha test --recursive -R spec"//,
+ //   "coveralls" : "./node_modules/mocha/bin/mocha test --recursive - r blanket -R mocha-lcov-report | coveralls"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,11 @@
     "url": "https://github.com/jbrooks036/grader/issues"
   },
   "homepage": "https://github.com/jbrooks036/grader",
-  "config": {
-    "blanket": {
-      "pattern": "/app/"
-    }
-  },
+ //  "config": {
+//    "blanket": {
+//      "pattern": "/app/"
+//    }
+//  },
   "dependencies": {
     "body-parser": "^1.5.2",
     "express": "^4.7.4",
